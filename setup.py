@@ -1,0 +1,26 @@
+from setuptools import setup, find_packages
+
+
+with open("README.md", "r") as fh:
+	long_description = fh.read()
+
+
+setup(
+	name="flex-common",
+	version="0.0.1",
+	author="David Kyalo",
+	author_email="davidmkyalo@gmail.com",
+	description="Common python utility sub-packages",
+	long_description=long_description,
+	# long_description_content_type="text/markdown",
+	url="https://github.com/centergy/flex_common",
+	packages=find_packages(include=['flex.*']),
+	install_requires=[
+		'Werkzeug',
+	],
+	classifiers=(
+		"Programming Language :: Python :: 3",
+		"License :: OSI Approved :: MIT License",
+		"Operating System :: OS Independent",
+	),
+)
